@@ -1,0 +1,90 @@
+
+
+
+img{
+    height: 70px;
+    width: 200px;
+    border-radius: 10px;
+    
+}
+
+.harsh{
+    margin-left: 230px;
+}
+
+.harsh li a{
+    color: white !important;
+}
+
+/* .pp{
+    margin-left: 290px;
+    margin-top: 22px;
+    text-decoration: none;
+} */
+
+div.navbar{
+
+    background-color: rgba(26, 25, 25, 0.37);
+    background-image: linear-gradient(to left, rgba(11,12,12, 0.8) , rgba(12,32,23, 08) , rgba(33,23,23, 08 )) ,url("../images/logo2.png ");
+}
+
+div.navbar:hover{
+    color: cornflowerblue;
+    background-color: aqua;
+}
+
+
+/* modal */
+
+.modal{
+    background-color: black;
+    background-image: url(../images/hurr.jpg); background-size: cover; background-repeat: none;
+    
+}
+
+.modal-content{
+    background-color: rgba(173, 216, 230, 0.301) !important;
+}
+
+.modal-header{
+    font-family: "playfair Display",serif;
+}
+
+.modal-dialog form{
+    padding: 10px;
+
+}
+
+.modal-dialog form label,    input{
+    display: block;
+    width: 100%;
+    color: black;
+}
+
+.modal-dialog  label{
+    padding: 10px;
+}
+
+.modal-dialog input{
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid #835b2e;
+}
+
+.modal-dialog  button{
+    background-color: #c5bac5;
+    margin-top: 20px;
+    width: 30%;
+
+}
+
+
+.modal-dialog button:hover{
+    background-color: #38948c;
+    border-color: black;
+}
+
+.font-size{
+    font-size: 80px;
+    color: aliceblue;
+}

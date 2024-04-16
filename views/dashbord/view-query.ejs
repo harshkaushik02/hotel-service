@@ -1,0 +1,61 @@
+<!-- header part -->
+<div class="container-fluid" style="background-color: red;">
+    <div class="row">
+        <%- include('header.ejs') %>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-3">
+            <%- include('left-menu.ejs') %>
+        </div>
+        <div class="col-9">
+
+            <% if(regdata.length>0){ %>
+                
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>FnameName</td>
+                            <td>Email</td>
+                            <td>Contact</td>
+                            <td>Massage</td>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <% for(var i = 0; i<regdata.length; i++) {%>
+                            <tr>
+                                <td>
+                                    <%= regdata[i].f_name %> 
+                                </td>
+                                <td>
+                                    <%= regdata[i].email%>
+                                </td>
+                                <td>
+                                    <%= regdata[i].contact %>
+                                </td>
+                                <td>
+                                    <%= regdata[i].massage %>
+                                </td>
+
+                                <!-- <td>
+                                    <!-- delelt product 
+                                    <a href="/delete_product/<%= regdata[i]._id %>" class="btn btn-primary" role="button">Delete</a>
+                                    <!-- edit product 
+                                    <a href="/edit_product/<%= regdata[i]._id %>" class="btn btn-primary" role="button"> Update</a>
+                                </td> -->
+                            </tr>
+                            
+                            <%} %>
+                       
+                    </tbody>
+                </table>
+                
+                <%} else{%> no record found <%} %>
+
+           
+        </div>
+    </div>
+</div>

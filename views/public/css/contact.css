@@ -1,0 +1,37 @@
+
+
+.contact-navigation h1,h5{
+    padding: 0px !important;
+}
+
+/* CONTACT US SECTION */
+.contact-us{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-detail p{
+    color: black; 
+}
+
+.query input{
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #773705; 
+}
+
+.query button{
+    background-color: #ebb184;
+}
+
+.query h3{
+    font-family: "Playfair Display", serif;
+    color: #ebb184;
+}
+
+.icon{
+    font-size: 30px;
+    padding: 10px;
+    color: #ebb184; 
+    text-align: center;
+}

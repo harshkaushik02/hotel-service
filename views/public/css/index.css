@@ -1,0 +1,9 @@
+.photo{
+    background-image: url(../images/background.jpg); background-size: cover; background-repeat: none;
+    height: 600PX;
+}
+
+
+.images img{
+    height: 250px;
+}

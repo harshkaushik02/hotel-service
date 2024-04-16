@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+
+  <link rel="stylesheet" href="./public/css/contact.css">
+</head>
+
+<body>
+  <!-- this include is used to add on the common header file -->
+  <%- include('./common/header.ejs') %>
+
+
+    <!-- ASK QUERY -->
+    <section class="contact-us ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <form class="query" method="post" action="/contact">
+              <h3 class="text-center">Ask Your Query</h3>
+              <label for="name">Enter Name: </label>
+              <input type="text" id="name" name="f_name" placeholder="Enter name" />
+
+              <label for="pickup" class="pt-3">email: </label>
+              <input type="email" id="pickup" name="email" placeholder="enter your mail" />
+
+              <label for="pickup" class="pt-3"> Contact: </label>
+              <input type="text" id="pickup" name="contact" placeholder="enter your phone number" />
+
+              <label for="drop" class="pt-3"> Message: </label>
+              <textarea style="width: 100%; height: 100px; padding-left: 20px" name="massage" placeholder="your query"></textarea>
+
+              <button class="btn p-2 w-25">SUBMIT</button>
+            </form>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section design -->
+    <%- include('./common/footer.ejs') %>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Portal</title>
+
+    <!-- style -->
+    <style>
+        .welcome-text {
+            font-size: 30px;
+            color: red;
+            background-color: rgb(167, 238, 238);
+        }
+
+        .welcome-text p {
+            display: flex !important;
+            justify-content: center;
+            align-items: center !important;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" style="background-color: red;">
+        <div class="row">
+            <%- include('header.ejs') %>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-3">
+                <%- include('left-menu.ejs') %>
+            </div>
+            <div class="col-9 welcome-text">
+                <p style="justify-content: center; align-items: center;">
+                    Welcome to Admin
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
